@@ -1,0 +1,14 @@
+<div>
+  <button (click)="getAllUsers()">Get All Users</button>
+</div>
+<div>
+  <span>All User`s Ids:</span>
+  <ul>
+    <li *ngFor="let user of allUsers | async">
+      <a href="javascript:null" (click)="getUser(user.id)">{{user.id}}</a>
+      <button *ngIf="user.friends.length" (click)="getFriends(user.friends)">Get friends data</button>
+      <button *ngIf="user.job" (click)="getJob(user.job)">Get Job data</button>
+    </li>
+  </ul>
+</div>
+<app-user [user]="user | async"></app-user>

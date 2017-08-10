@@ -1,0 +1,97 @@
+{
+  "users": {
+    "u1001": {
+      "id": "u1001",
+      "firstName": "Dan",
+      "LastName": "Doo",
+      "friends": ["u1002", "u1003", "u1005"],
+      "job": "j1001"
+    },
+    "u1002": {
+      "id": "u1002",
+      "firstName": "Ben",
+      "LastName": "Koo",
+      "friends": ["u1003", "u1007"],
+      "job": "j1003"
+    },
+    "u1003": {
+      "id": "u1003",
+      "firstName": "Man",
+      "LastName": "Mu",
+      "friends": ["u1002", "u1005"],
+      "job": "j1005"
+    },
+    "u1004": {
+      "id": "u1004",
+      "firstName": "Ken",
+      "LastName": "Lo",
+      "friends": [],
+      "job": ""
+    },
+    "u1005": {
+      "id": "u1005",
+      "firstName": "Hard",
+      "LastName": "Name",
+      "friends": ["u1006", "u1007"],
+      "job": "j1021"
+    },
+    "u1006": {
+      "id": "u1006",
+      "firstName": "Moshe",
+      "LastName": "Cohen",
+      "friends": ["u1001", "u1005"],
+      "job": "j1011"
+    },
+    "u1007": {
+      "id": "u1007",
+      "firstName": "Wa",
+      "LastName": "Lla",
+      "friends": ["u1002", "u1005", "u1006"],
+      "job": "j1007"
+    }
+  },
+  "jobs": {
+    "j1001": {
+      "id": "j1001",
+      "description": "Perfect job",
+      "address": "Some where, IL",
+      "phone": "111-1111"
+    },
+    "j1003": {
+      "id": "j1003",
+      "description": "Another standard job",
+      "address": "Here, IL",
+      "phone": "123-4567"
+    },
+    "j1005": {
+      "id": "j1005",
+      "description": "Cement shaker",
+      "address": "Nesher, IL",
+      "phone": "1-800-cement"
+    },
+    "j1007": {
+      "id": "j1007",
+      "description": "Full stack Developer with speciality at frameworks",
+      "address": "Rothschild 0 TA, IL",
+      "phone": "1-2-3-hipster"
+    },
+    "j1011": {
+      "id": "j1011",
+      "description": "Jewish Job",
+      "address": "Jerusalem, IL",
+      "phone": "123-J"
+    },
+    "j1021": {
+      "id": "j1021",
+      "description": "A job",
+      "address": "Home",
+      "phone": "050-505-5500"
+    },
+    "j1033": {
+      "id": "j1033",
+      "description": "Nobody job",
+      "address": "Nowhere",
+      "phone": "0"
+    }
+  }
+}
