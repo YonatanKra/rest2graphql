@@ -1,0 +1,5 @@
+<div>
+  <input #nameInput placeholder="Enter Name">
+  <button (click)="check(nameInput.value)">Check</button>
+  <span>result: {{(result | async).data.test}}</span>
+</div>

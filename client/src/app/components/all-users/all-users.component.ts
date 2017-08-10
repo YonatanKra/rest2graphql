@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
-import {RestApiService} from '../../services/rest-api.service';
+import {RestApiService} from '../../services/rest-api/rest-api.service';
 import 'rxjs/add/observable/forkJoin';
 import {User} from '../../interfaces/user';
 

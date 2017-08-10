@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {HttpClient} from '@angular/common/http';
-import {User} from '../interfaces/user';
-import {Job} from '../interfaces/job';
+import {User} from '../../interfaces/user';
+import {Job} from '../../interfaces/job';
 
 @Injectable()
 export class RestApiService {
