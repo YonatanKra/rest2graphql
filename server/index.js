@@ -1,9 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 const api = require('./api');
+const entriesCounter = require('./entries-counter');
 
 let app = express();
 app.use(cors());
+entriesCounter.init(app);
 
 app.get('/', (req, res) => {
     res.send('Welcome To REST 2 GRAPHQL');
@@ -17,5 +19,6 @@ app.get('/api', (req, res) => {
 });
 
 api.init(app);
+entriesCounter.get(app);
 console.log('http://localhost:9000');
 app.listen(9000);

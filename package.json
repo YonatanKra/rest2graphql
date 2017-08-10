@@ -32,6 +32,7 @@
     "express-graphql": "^0.6.7",
     "graphql": "^0.10.5",
     "graphql-tag": "^2.4.2",
+    "request-ip": "^2.0.2",
     "rxjs": "^5.4.1",
     "zone.js": "^0.8.14"
   },
