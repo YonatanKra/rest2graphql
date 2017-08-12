@@ -1,5 +1,9 @@
 <div>
+  <label>Graphql</label><input type="radio" #graphqlButton name="mode" value="graphql" checked (change)="setMode(graphqlButton.value)">
+  <label>Apollo</label><input type="radio" #apolloButton name="mode" value="apollo"  (change)="setMode(apolloButton.value)">
+</div>
+<div>
   <input #nameInput placeholder="Enter Name">
   <button (click)="check(nameInput.value)">Check</button>
-  <span>result: {{(result | async).data.test}}</span>
+  <span>result: {{result | async}}</span>
 </div>
