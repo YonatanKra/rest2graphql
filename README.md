@@ -1,28 +1,39 @@
-# Client
+# Rest 2 GraphQL
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
+This project demonstrate a simple steps to add the [graphql](http://graphql.org/) to a restAPI based project at both client and server sides.
 
-## Development server
+### Code
+It have few branches to demonstrate the way from rest based to graphql based communiation
+* master
+    * a rest api app
+    * (hopefully) dependencies for all steps of project at package.json for easy starter
+* step-1_graphql-server
+    * Configuration and end point to communicate with the server at graphql style
+    * **It not include the rest api as graphql schema**
+* step-2_graphql-client
+    * New service at client (GraphqlApiService) to communicate with the `test` query at server with grqphql
+    * **Like the server, it not include the rest api as graphql schema**
+* step-2.1_apollo-client
+    * New service at client (ApolloApiService) to communicate with the `test` query at server with grqphql.
+     This service was build with same inner API so the components that use one of the services would use same API with different communication platform.
+    * There is ability to choose (at CheckGraphqlComponent) which communication platform to use.
+        * simple Graphql.
+        * apollo client.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+        Both the platforms accesses to the same server but with different API.
+    * **Like the server, it not include the rest api as graphql schema**
 
-## Code scaffolding
+### Client
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `npm run client` for a dev client server. It will open `http://localhost:4200/` at your browser.
 
-## Build
+There is a button on the client screen that show which endpoints the client use until last check,
+this idea was build to show how many calls to server we could save by using graphql idea
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Server
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Run `npm run server` to run the node express based server.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
